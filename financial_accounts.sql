@@ -13,8 +13,8 @@ INSERT INTO financial_accounts (account_id, parent_id, name, value) VALUES
 ('c7a7a89e-cc40-40b0-90dd-60f0dadedc41', 'A3', 'Flex 2761', -47077.50),
 
 --AR
-('A4', 'A2', 'Accounts Receivable', '13788410.16'),
-('bdd4df93-54ac-420c-8a9b-897a24f79c9c', 'A4', 'Accounts Receivable', 13788410.16)
+('A4', 'A2', 'Accounts Receivable', 13788410.16),
+('bdd4df93-54ac-420c-8a9b-897a24f79c9c', 'A4', 'Accounts Receivable', 13788410.16),
 
 --OCA
 ('A5', 'A2', 'Other Current Assets', 24983.97),
@@ -54,4 +54,5 @@ INSERT INTO financial_accounts (account_id, parent_id, name, value) VALUES
 ('b1ba5fb3-5d54-4806-ad8d-e78bd2187e13', 'E1', 'Retained Earnings', 11881707.50),
 --This isnt a GAAP account, but ok
 ('49862dbf-e470-479e-98ae-c1e172bd86a3', 'E1', 'Balance Adjustments', 122453.09),
-('E3', 'E1', 'Net Income', 489940.96);
+('E3', 'E1', 'Net Income', 489940.96)
+  ;
