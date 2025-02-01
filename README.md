@@ -40,6 +40,8 @@ Stockholders equity
 Draw.io [here](https://drive.google.com/file/d/1DusMcjZVPdLlWUfS_-naJ_prlJT8BPip/view?usp=sharing)  
 This is my best case scenario for a set of tables. I don't think this will practically work with this example, but if I was making a balance sheet I'd want it in this sort of format
 
+scratch that ^ lots to be desired here, but trying to make a sql solution work
+
 (2) For data validation purposes
 At the highest level, a basic principle in Accounting is A = L + SE  
 each child balance must roll up into the parent balance  
