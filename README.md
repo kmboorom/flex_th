@@ -4,53 +4,49 @@ I made this a stream of conciousness, I hope that's ok, at the very least you'll
 
 Starting drawing now, can view [here](https://drive.google.com/file/d/1DusMcjZVPdLlWUfS_-naJ_prlJT8BPip/view?usp=sharing)
 
-
-
 USing https://jsonformatter.org/json-pretty-print to make this easier to read
 
 ok it looks like we have a couple different levels to this nested array.
 
-It's a balance sheet. 
-
 For ERD
 
-Accounts
--account_id (pk)
--parent_id (fk)
--name
--balance_in_usd
+Accounts  
+-account_id (pk)  
+-parent_id (fk)  
+-name  
+-balance_in_usd  
 
 
-Assets
--asset_id (pk)
--asset_name
--balance_in_usd
--parent_id (fk)
+Assets  
+-asset_id (pk)  
+-asset_name  
+-balance_in_usd  
+-parent_id (fk)  
 
-Liabililties
--liabililty_id (pk)
--liabililty_name
--balance_in_usd
--parent_id (fk)
+Liabililties  
+-liabililty_id (pk)  
+-liabililty_name  
+-balance_in_usd  
+-parent_id (fk)  
 
-Stockholders equity
--asset_id (pk)
--equity_name
--account_type
--balance_in_usd
--parent_id (fk)
+Stockholders equity  
+-asset_id (pk)  
+-equity_name  
+-account_type  
+-balance_in_usd  
+-parent_id (fk)  
 
 
 (1) Data modelling
-Draw.io [here](https://drive.google.com/file/d/1DusMcjZVPdLlWUfS_-naJ_prlJT8BPip/view?usp=sharing)
+Draw.io [here](https://drive.google.com/file/d/1DusMcjZVPdLlWUfS_-naJ_prlJT8BPip/view?usp=sharing)  
 This is my best case scenario for a set of tables. I don't think this will practically work with this example, but if I was making a balance sheet I'd want it in this sort of format
 
 (2) For data validation purposes
-At the highest level, a basic principle in Accounting is A = L + SE
-each child balance must roll up into the parent balance
-I can see how in python this would probably be easiest to loop through each level of the array and make sure that the subsequent child equals the parent balance
-that said, I"m probably most comfortable in sql in the time limit so I'll probably flatten the array and make a CTE based query.
-Again if I had more time i'd probably try to make something fancy and recursive sql statement, but trying to make this simple. 
+At the highest level, a basic principle in Accounting is A = L + SE  
+each child balance must roll up into the parent balance  
+I can see how in python this would probably be easiest to loop through each level of the array and make sure that the subsequent child equals the parent balance  
+that said, I'm probably most comfortable in sql in the time limit so I'll probably flatten the array and make a CTE based query.  
+Again if I had more time i'd probably try to make something fancy and recursive sql statement, but trying to make this simple.   
 
 
 
