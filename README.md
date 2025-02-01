@@ -55,3 +55,5 @@ I did this locally in postgres
 idk why I did it this way, this really isn't the best way to do this  
 wow I should have just taken my chances on the python script  
 
+ok now that we have insert statements, if all of the keys are right, this should be a pretty simple query
+
