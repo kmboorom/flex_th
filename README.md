@@ -36,13 +36,13 @@ Stockholders equity
 -parent_id (fk)  
 
 
-(1) Data modelling
+ ## (1) Data modelling
 Draw.io [here](https://drive.google.com/file/d/1DusMcjZVPdLlWUfS_-naJ_prlJT8BPip/view?usp=sharing)  
 This is my best case scenario for a set of tables. I don't think this will practically work with this example, but if I was making a balance sheet I'd want it in this sort of format
 
 scratch that ^ lots to be desired here, but trying to make a sql solution work
 
-(2) For data validation purposes
+## (2) For data validation purposes
 At the highest level, a basic principle in Accounting is 
 A = L + SE 
 SE = (CS + APIC) + RE
@@ -51,9 +51,15 @@ I can see how in python this would probably be easiest to loop through each leve
 that said, I'm probably most comfortable in sql in the time limit so I'll probably flatten the array and make a CTE based query.  
 Again if I had more time i'd probably try to make something fancy and recursive sql statement, but trying to make this simple.   
 
-I did this locally in postgres  
-idk why I did it this way, this really isn't the best way to do this  
-wow I should have just taken my chances on the python script  
-
 ok now that we have insert statements, if all of the keys are right, this should be a pretty simple query
 
+
+## After Action Review
+
+Ok there's a problem here because the sum of Accounts payable + credit cards != current liabilities. That worked
+The other check works.
+
+In hindsight trying to do this in sql was not a good idea. This would have been fairly straight forward in python. 
+
+The data isn't tabular so I had to do a bunch of manual stuff to make it tabular. That said I hope I showed that I understand the heirarchical nature of a Balance sheet. the final query worked. I would definitely design an ETL pipeline which would make these different functioning tables so they can be analyzed more easily in a data wharehouse
+enviornment. 
