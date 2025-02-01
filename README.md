@@ -14,26 +14,25 @@ Accounts
 -account_id (pk)  
 -parent_id (fk)  
 -name  
--balance_in_usd  
+-value  
 
 
 Assets  
 -asset_id (pk)  
 -asset_name  
--balance_in_usd  
+-value  
 -parent_id (fk)  
 
 Liabililties  
 -liabililty_id (pk)  
 -liabililty_name  
--balance_in_usd  
+-value  
 -parent_id (fk)  
 
 Stockholders equity  
 -asset_id (pk)  
 -equity_name  
--account_type  
--balance_in_usd  
+-value  
 -parent_id (fk)  
 
 
