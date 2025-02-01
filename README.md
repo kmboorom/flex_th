@@ -51,7 +51,7 @@ I can see how in python this would probably be easiest to loop through each leve
 that said, I'm probably most comfortable in sql in the time limit so I'll probably flatten the array and make a CTE based query.  
 Again if I had more time i'd probably try to make something fancy and recursive sql statement, but trying to make this simple.   
 
-I did this locally in postgres
-idk why I did it this way, this really isn't the best way to do this
-wow I should have just taken my chances on the python script
+I did this locally in postgres  
+idk why I did it this way, this really isn't the best way to do this  
+wow I should have just taken my chances on the python script  
 
