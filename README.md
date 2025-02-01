@@ -61,5 +61,6 @@ The other check works.
 
 In hindsight trying to do this in sql was not a good idea. This would have been fairly straight forward in python. 
 
-The data isn't tabular so I had to do a bunch of manual stuff to make it tabular. That said I hope I showed that I understand the heirarchical nature of a Balance sheet. the final query worked. I would definitely design an ETL pipeline which would make these different functioning tables so they can be analyzed more easily in a data wharehouse
-enviornment. 
+The data isn't tabular so I had to do a bunch of manual stuff to make it tabular. That said I hope I showed that I understand the heirarchical nature of a Balance sheet. the final query worked. I would definitely design an ETL pipeline which would make these different functioning tables so they can be analyzed more easily in a data warehouse
+enviornment. My general approach the the problem was to insert the data into seperate tables, but then realized there were missing keys, so I had to generate some. My hope was to get to a point where I could do what I did in my final query and just make a simple case statement. There were also some general data qualilty issues with the differences in the account_id's. I'd definitely want to standardize those. My approach has the gaping hole that I manually edited the keys to make it work. In the future I would use python and loop through it. 
+
